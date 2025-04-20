@@ -1,11 +1,20 @@
 import React from 'react';
 import './styles.css';
 
-// Import your algorithm components...
+// Keep all your existing imports
 import BubbleSort from './components/algorithms/BubbleSort';
-// ... other imports ...
+import SelectionSort from './components/algorithms/SelectionSort';
+import InsertionSort from './components/algorithms/InsertionSort';
+import QuickSort from './components/algorithms/QuickSort';
+import CountingSort from './components/algorithms/CountingSort';
+import RadixSort from './components/algorithms/RadixSort';
+import MergeSort from './components/algorithms/MergeSort';
+import Graphs from './components/graphs/Graphs';
+import GraphsImplementation from './components/graphs/GraphsImplementation';
+import GraphsTraversal from './components/graphs/GraphsTraversal';
+import GraphsCycleDetection from './components/graphs/GraphsCycleDetection';
 
-// Import the References component
+// Add this new import
 import References from './components/References';
 
 const App = () => {
@@ -16,19 +25,27 @@ const App = () => {
       </header>
       
       <main>
-        {/* Your existing algorithm sections... */}
+        {/* Keep all existing content exactly as is */}
         <div className="content-section">
           <h2>Sorting Algorithms</h2>
           <BubbleSort />
-          {/* Other sorting components... */}
+          <SelectionSort />
+          <InsertionSort />
+          <QuickSort />
+          <CountingSort />
+          <RadixSort />
+          <MergeSort />
         </div>
         
         <div className="content-section">
           <h2>Graph Algorithms</h2>
-          {/* Graph components... */}
+          <Graphs />
+          <GraphsImplementation />
+          <GraphsTraversal />
+          <GraphsCycleDetection />
         </div>
 
-        {/* Add the References component at the bottom */}
+        {/* Add References at the bottom */}
         <References />
       </main>
       
